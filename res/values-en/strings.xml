@@ -46,9 +46,9 @@
     <string name="category_sample_icecream">Ice-cream</string>
 
 	<string name="dateInterval_ui_title">Date ranges</string>
-	<string name="dateInterval_ui_title_choose">Set date filter</string>
-    <string name="dateInterval_ui_title_edit">Edit date filter</string>
-    <string name="dateInterval_ui_title_add">Add date filter</string>
+	<string name="dateInterval_ui_title_choose">Set date range</string>
+    <string name="dateInterval_ui_title_edit">Edit date range</string>
+    <string name="dateInterval_ui_title_add">Add date range</string>
    	<string name="dateInterval_ui_lable_name">Name</string>
     <string name="dateInterval_ui_lable_dateFrom">From date</string>
     <string name="dateInterval_ui_lable_dateTo">To date</string>
@@ -80,6 +80,6 @@
         
     <string name="submenu_sendList">Send list</string>
     <string name="submenu_categories">Categories</string>
-    <string name="submenu_dateIntervals">Date filters</string>        
+    <string name="submenu_dateIntervals">Date ranges</string>        
         
 </resources>
