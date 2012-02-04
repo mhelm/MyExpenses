@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/expenseUI_linearLayoutTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/expenseUI_textHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="headerTextLeft"
+            android:textColor="@color/white"
+            android:textStyle="bold" android:paddingTop="1dp" android:paddingBottom="3dp" style="?android:attr/windowTitleStyle" android:background="@color/lightSteelBlue4"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/expenseUI_scrollViewCentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/expenseUI_linearLayoutBottom"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" android:layout_below="@id/expenseUI_linearLayoutTop">
+
+        <TableLayout
+            android:id="@+id/expenseUI_tableLayoutCentral"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5px"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:id="@+id/expenseUI_tableRowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/expenseUI_lableDate"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:paddingRight="10dip"
+                    android:text="@string/expense_ui_lable_date" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/expenseUI_textDate"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="none" >
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/expenseUI_tableRowAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/expenseUI_lableAmount"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:paddingRight="10dip"
+                    android:text="@string/expense_ui_lable_amount" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/expenseUI_textAmount"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:inputType="numberDecimal" >
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/expenseUI_tableRowCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/expenseUI_lableCategory"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:paddingRight="10dip"
+                    android:text="@string/expense_ui_lable_category" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/expenseUI_textCategory"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:inputType="none" >
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/expenseUI_tableRowDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/expenseUI_lableDescription"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:paddingRight="10dip"
+                    android:text="@string/expense_ui_lable_description" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/expenseUI_textDescription"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:inputType="text"
+                    android:scrollHorizontally="true" >
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/expenseUI_tableRowType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/expenseUI_lableMethodOfPayment"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" />
+
+                <RadioGroup
+                    android:id="@+id/expenseUI_radioGroup1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/expenseUI_radioCash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/expense_ui_radiobutton_cash" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/expenseUI_radioCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expense_ui_radiobutton_card" >
+                    </RadioButton>
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/expenseUI_linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/expenseUI_buttonCancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_cancel" >
+        </Button>
+
+        <Button
+            android:id="@+id/expenseUI_buttonOK"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_ok" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

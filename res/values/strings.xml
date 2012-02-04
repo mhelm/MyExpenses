@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_opaque">#f00</color>
+    <color name="red_translucent">#80ff0000</color>
+    <color name="lightBlue">#B0C4DE</color>
+    <color name="lightSteelBlue1">#CAE1FF</color>
+    <color name="lightSteelBlue2">#BCD2EE</color>
+    <color name="lightSteelBlue3">#A2B5CD</color>
+    <color name="lightSteelBlue4">#6E7B8B</color>
+    <color name="wheat1">#FFE7BA</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

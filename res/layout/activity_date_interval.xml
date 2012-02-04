@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent">
+    <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="match_parent" android:id="@+id/dateIntervalUI_linearLayoutTop">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="4dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/dateIntervalUI_textHeader" android:text="headerTextLeft" android:paddingBottom="3dp" android:paddingTop="1dp" style="?android:attr/windowTitleStyle" android:background="@color/lightSteelBlue4"></TextView>
+    </LinearLayout>
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/dateIntervalUI_linearLayoutBottom" android:layout_below="@+id/dateIntervalUI_linearLayoutTop" android:paddingBottom="5dip" android:paddingTop="5dip" android:id="@+id/dateIntervalUI_scollViewCentral">
+        <TableLayout android:stretchColumns="1" android:layout_width="match_parent" android:layout_height="fill_parent" android:id="@+id/dateIntervalUI_tableLayoutCentral" android:paddingLeft="5px">
+            <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/dateIntervalUI_tableRowCategory">
+
+                <TextView
+                    android:id="@+id/dateIntervalUI_lableName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:paddingRight="10dip"
+                    android:text="@string/dateInterval_ui_lable_name" >
+</TextView>
+
+                <EditText
+                    android:id="@+id/dateIntervalUI_textName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:text="" >
+</EditText>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/dateIntervalUI_tableRowDateFrom">
+
+                <TextView
+                    android:id="@+id/dateIntervalUI_lableDateFrom"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:paddingRight="10dip"
+                    android:text="@string/dateInterval_ui_lable_dateFrom" >
+</TextView>
+                <EditText android:text="" android:layout_weight="0.7" android:layout_width="0dip" android:layout_height="wrap_content" android:id="@+id/dateIntervalUI_textDateFrom" android:inputType="none" android:focusable="false" android:focusableInTouchMode="false" android:cursorVisible="false"></EditText>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/dateIntervalUI_tableRowDateTo">
+                <TextView android:paddingRight="10dip" android:layout_weight="0.3" android:layout_width="0dip" android:layout_height="wrap_content" android:id="@+id/dateIntervalUI_lableDateTo" android:text="@string/dateInterval_ui_lable_dateTo"></TextView>
+                <EditText android:text="" android:layout_weight="0.7" android:layout_width="0dip" android:layout_height="wrap_content" android:id="@+id/dateIntervalUI_textDateTo" android:inputType="none" android:cursorVisible="false" android:focusable="false" android:focusableInTouchMode="false"></EditText>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <LinearLayout android:layout_alignParentBottom="true" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/dateIntervalUI_linearLayoutBottom">
+        <Button android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/dateIntervalUI_buttonCancel" android:text="@string/button_cancel"></Button>
+        <Button android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/dateIntervalUI_buttonOK" android:text="@string/button_ok"></Button>
+    </LinearLayout>
+</RelativeLayout>

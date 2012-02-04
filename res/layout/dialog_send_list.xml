@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/username_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:gravity="left"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:text="@string/sendList_dialog_lable_emailAddress"
+                android:textColor="@color/white"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/username_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:autoText="false"
+                android:capitalize="none"
+                android:gravity="fill_horizontal"
+                android:scrollHorizontally="true"
+                android:textAppearance="?android:attr/textAppearanceMedium" android:inputType="textEmailAddress">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/mail_format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:paddingTop="5dip"
+                android:text="@string/sendList_dialog_lable_format"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:id="@+id/mail_format_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/mail_format_csv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/sendList_dialog_lable_formatCsv"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/mail_format_html"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/sendList_dialog_lable_formatHtml"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/mail_format_qif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sendList_dialog_lable_formatQif"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/mail_format_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/sendList_dialog_lable_formatXml"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+        
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent">
+    <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="match_parent" android:id="@+id/categoryUI_linearLayoutTop">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="4dp" android:id="@+id/categoryUI_textHeader" android:textStyle="bold" android:textColor="@color/white" android:text="headerTextLeft" android:paddingBottom="3dp" android:paddingTop="1dp" android:background="@color/lightSteelBlue4" style="?android:attr/windowTitleStyle"></TextView>
+    </LinearLayout>
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/categoryUI_scollViewCentral" android:layout_above="@+id/categoryUI_linearLayoutBottom" android:layout_below="@+id/categoryUI_linearLayoutTop" android:paddingBottom="5dip" android:paddingTop="5dip">
+        <TableLayout android:stretchColumns="1" android:layout_width="match_parent" android:layout_height="fill_parent" android:id="@+id/categoryUI_tableLayoutCentral" android:paddingLeft="5px">
+            <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/categoryUI_tableRowCategory">
+
+                <TextView
+                    android:id="@+id/categoryUI_lableName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:paddingRight="10dip"
+                    android:text="@string/category_ui_lable_name" >
+</TextView>
+
+                <EditText
+                    android:id="@+id/categoryUI_textName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:inputType="text"
+                    android:maxLength="20" >
+</EditText>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <LinearLayout android:layout_alignParentBottom="true" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/categoryUI_linearLayoutBottom">
+        <Button android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/categoryUI_buttonCancel" android:text="@string/button_cancel"></Button>
+        <Button android:layout_width="0dip" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/categoryUI_buttonOK" android:text="@string/button_ok"></Button>
+    </LinearLayout>
+</RelativeLayout>

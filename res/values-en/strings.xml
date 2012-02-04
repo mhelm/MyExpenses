@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Expenses</string>
+	
+    <string name="button_add">Add</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    
+    <string name="blank"></string>
+    
+    <string name="standard_action_edit">Edit</string>
+    <string name="standard_action_delete">Delete</string>
+    <string name="standard_action_deleteAll">Delete list</string>
+        
+    <string name="expense_ui_title">Expenses</string>
+    <string name="expense_ui_title_edit">Edit expense</string>
+    <string name="expense_ui_title_add">Add expense</string>
+    <string name="expense_ui_lable_date">Date</string>
+    <string name="expense_ui_lable_amount">Amount</string>
+    <string name="expense_ui_lable_category">Category</string>
+    <string name="expense_ui_lable_description">Description</string>
+    <string name="expense_ui_radiobutton_cash">Cash</string>
+    <string name="expense_ui_radiobutton_card">Card</string>
+    <string name="expense_type_cash">Cash</string>
+    <string name="expense_type_card">Card</string>
+    <string name="expense_filterDialog_title">Only show expenses with the following properties:</string>
+        
+    <string name="category_ui_title">Categories</string>
+    <string name="category_ui_title_add">Add category</string>
+    <string name="category_ui_title_edit">Edit category</string>
+    <string name="category_ui_title_choose">Set category</string>
+    <string name="category_ui_lable_name">Name</string>
+    <string name="category_sample_health">Health</string>
+    <string name="category_sample_food">Food</string>
+    <string name="category_sample_presents">Presents</string>
+    <string name="category_sample_furnishings">Furnishings</string>
+    <string name="category_sample_doItYourself">Do-it-yourself</string>
+    <string name="category_sample_parkingFee">ParkingFee</string>
+    <string name="category_sample_children">Children</string>
+    <string name="category_sample_donation">Donation</string>
+    <string name="category_sample_leisure">Leisure</string>
+    <string name="category_sample_restaurant">Restaurant</string>
+    <string name="category_sample_miscellaneous">Miscellaneous</string>
+    <string name="category_sample_meansForWork">Means for work</string>
+    <string name="category_sample_books">Books</string>
+    <string name="category_sample_icecream">Ice-cream</string>
+
+	<string name="dateInterval_ui_title">Date ranges</string>
+	<string name="dateInterval_ui_title_choose">Set date filter</string>
+    <string name="dateInterval_ui_title_edit">Edit date filter</string>
+    <string name="dateInterval_ui_title_add">Add date filter</string>
+   	<string name="dateInterval_ui_lable_name">Name</string>
+    <string name="dateInterval_ui_lable_dateFrom">From date</string>
+    <string name="dateInterval_ui_lable_dateTo">To date</string>
+    <string name="dateInterval_filterDialog_title">Only show expenses within the following date range:</string>
+    <string name="dateInterval_sample_none">Unrestricted</string>
+    <string name="dateInterval_sample_today">Today</string>
+    <string name="dateInterval_sample_yesterday">Yesterday</string>
+    <string name="dateInterval_sample_lastWeek">Last week</string>
+    <string name="dateInterval_sample_lastMonth">Last month</string>
+    <string name="dateInterval_sample_lastQuarter">Last quarter</string>
+    <string name="dateInterval_sample_lastYear">Last year</string>
+    <string name="dateInterval_sample_thisWeek">This week</string>
+    <string name="dateInterval_sample_thisMonth">This month</string>
+    <string name="dateInterval_sample_thisYear">This year</string>
+    
+    <string name="sendList_dialog_title">Send list</string>       
+    <string name="sendList_dialog_lable_format">Format:</string>    
+    <string name="sendList_dialog_lable_formatHtml">HTML file (UTF-8)</string>    
+    <string name="sendList_dialog_lable_formatQif">QIF file (ISO-8859-1)</string>    
+    <string name="sendList_dialog_lable_formatCsv">CSV file (UTF-8)</string>    
+    <string name="sendList_dialog_lable_formatXml">XML file (UTF-8)</string>    
+    <string name="sendList_dialog_lable_emailAddress">Email address:</string>
+    <string name="sendList_dialog_button_send">Send</string>
+    <string name="sendList_eMail_subject">See attachment &#8230;</string>
+        
+    <string name="deleteElement_dialog_title">Delete</string>
+    <string name="deleteElement_dialog_warning_single">The entry will be deleted!</string>
+    <string name="deleteElement_dialog_warning_multiple">$1 entries will be deleted!</string>
+        
+    <string name="submenu_sendList">Send list</string>
+    <string name="submenu_categories">Categories</string>
+    <string name="submenu_dateIntervals">Date filters</string>        
+        
+</resources>

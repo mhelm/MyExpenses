@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/submenu_mail" android:title="@string/submenu_sendList" android:menuCategory="system" android:orderInCategory="2" android:icon="@android:drawable/ic_menu_send"/>
+    <item android:id="@+id/submenu_categories" android:title="@string/submenu_categories" android:menuCategory="system" android:orderInCategory="3" android:icon="@android:drawable/ic_menu_agenda"/>
+    <item android:id="@+id/submenu_dateFilters" android:title="@string/submenu_dateIntervals" android:menuCategory="system" android:orderInCategory="4" android:icon="@android:drawable/ic_menu_month"/>
+
+</menu>

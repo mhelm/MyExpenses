@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="wrap_content" android:paddingBottom="5px"
+android:paddingTop="5px" android:orientation="horizontal" android:layout_width="fill_parent" android:gravity="right" android:paddingRight="5px">
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/standardListItem4_image" android:src="@drawable/cash" android:paddingRight="5px"></ImageView>
+    <LinearLayout android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:baselineAligned="true">
+            <TextView android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold" android:id="@+id/standardListItem4_textUpperLeft" android:text="upperLeft" android:ellipsize="end" android:layout_width="match_parent" android:layout_weight="1"></TextView>
+            <TextView android:layout_height="wrap_content" android:gravity="right" android:id="@+id/standardListItem4_textUpperRight" android:textSize="20sp" android:textStyle="bold" android:text="upperRight" android:layout_width="fill_parent" android:layout_weight="2"></TextView>
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:orientation="horizontal" android:layout_width="match_parent" android:layout_gravity="bottom">
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/standardListItem4_textLowerLeft" android:text="lowerLeft" android:focusable="false" android:focusableInTouchMode="false"></TextView>
+            <TextView android:layout_height="wrap_content" android:gravity="right" android:id="@+id/standardListItem4_textLowerRight" android:text="lowerRight" android:layout_width="match_parent"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

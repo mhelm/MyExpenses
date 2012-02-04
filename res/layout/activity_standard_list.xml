@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/standardList"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/standardList_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/standardList_headerTextLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="4dp"
+            android:text="headerTextLeft"
+            android:textStyle="bold" android:paddingTop="1dp" android:paddingBottom="3dp" android:textColor="@color/white" android:background="@color/lightSteelBlue4" style="?android:attr/windowTitleStyle"/>
+
+        <TextView
+            android:id="@+id/standardList_headerTextRight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="4dp"
+            android:text="headerTextRight"
+            android:textColor="@color/white"
+            android:textStyle="bold" android:paddingBottom="3dp" android:paddingTop="1dp" android:background="@color/lightSteelBlue4" style="?android:attr/windowTitleStyle"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/standardList_buttons" android:layout_below="@+id/standardList_header">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/standardList_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/standardList_buttonsAddButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add" android:minHeight="40dip">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>
